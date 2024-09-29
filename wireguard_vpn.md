@@ -1,5 +1,7 @@
 # VPN_Wireguard_Hosting
 
+## Welcome to my tutorial about: How to install and configure Wireguard VPN securely (encryption is out of the box from Wireguard)
+
 ### Installing WireGuard (Ubuntu 24.04 LTS)
 
 ```
