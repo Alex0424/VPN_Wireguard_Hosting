@@ -51,7 +51,7 @@ sudo cat client_privatekey
 sudo cat client_publickey
 ```
 
-### Configure vpn server connections
+### On VPN Server: Add connection config file
 
 check your network interface:
 ```
@@ -72,7 +72,7 @@ PostDown = iptables -D FORWARD -i wg0 -j ACCEPT; iptables -t nat -D POSTROUTING 
 ListenPort = 51820
 ```
 
-add client to your config(if adding more clients chage ip address e.g. 10.0.0.2/32... 10.0.0.3/32... 10.0.0.4/32):
+### NEXT: add client to your config(if adding more clients chage ip address e.g. 10.0.0.2/32... 10.0.0.3/32... 10.0.0.4/32):
 ```
 vim /etc/wireguard/wg0.conf
 ```
@@ -82,7 +82,7 @@ PublicKey = <client-publickey>
 AllowedIPs = 10.0.0.2/32
 ```
 
-### Configure vpn server connections
+### On client: add connection config file
 
 ```
 vim /etc/wireguard/wg0.conf
